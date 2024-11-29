@@ -138,3 +138,131 @@ body {
   text-align: center;
   border-radius: 5px;
 }
+
+
+/* Phone sizes */
+@media all and (min-width:100px) and (max-width:600px) {
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  padding: 7vh;
+}
+
+#main-section {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+#to-do-list {
+  position: absolute;
+  top:55vh;
+  margin:auto;
+  text-align: center;
+}
+
+#tasks-container {
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  width:99vw;
+}
+
+#add-task {
+  border:1px solid black;
+  color:black;
+  width:50vw;
+  padding:.4vw;
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:3vw;
+  margin-top:10vh;
+  margin-bottom: 2.5vh;
+  font-size: 1.5rem;
+}
+
+#submit-button {
+  border:none;
+  background-color: var(--primary-color);
+  color:white;
+  width:50vw;
+  padding:.8vw 2.5vw .8vw 2.5vw;
+  border-radius: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:3vw;
+  margin-bottom:7vh;
+  font-size: 1.5rem;
+}
+#submit-button:hover {
+  cursor:pointer;
+  background-color: rgb(35, 36, 121);
+  color:rgb(232, 231, 231);
+}
+#started-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+#current-tasks {
+  background-color: var(--secondary-color);
+  color:rgb(255, 255, 255);
+  width:94vw;
+  padding:.8vw 2.5vw .8vw 2.5vw;
+  border-radius: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:3vw;
+  margin-bottom:3vh;
+  position: relative;
+  left:-10vw;
+  font-size: 1.5rem;
+}
+
+
+.new-task-class {
+  background-color: var(--third-color);
+  padding:1.8vw 1.5vw 1.8vw 2.5vw;
+  border-radius: 35px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:3vw;
+  position: relative;
+  left:-11vw;
+  margin-bottom: 2vh;
+  font-size: 1.2rem;
+}
+.delete-button-class {
+  display:none;
+}
+
+.day-counter-class {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left:67vw;
+  font-size: 1.2rem;
+}
+
+#day-counter{
+  position: relative;
+  top:-2px;
+  right:-10px;
+  font-size:1.2rem;
+  text-align: center;
+  border-radius: 5px;
+}
+}
