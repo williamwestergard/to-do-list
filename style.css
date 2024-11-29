@@ -3,6 +3,14 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --primary-color: #192991;
+  --secondary-color: #315dd9;
+  --third-color: hsl(209, 43%, 90%);
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
@@ -16,17 +24,24 @@ body {
   align-items: baseline;
 }
 
+#to-do-list {
+  position: absolute;
+  top:55vh;
+  margin:auto;
+  text-align: center;
+}
+
 #tasks-container {
   margin-top: 1vh;
   display: flex;
   flex-direction: column;
-  width:20vw;
+  width:60vw;
 }
 
 #add-task {
   border:1px solid black;
   color:black;
-  width:20vw;
+  width:30vw;
   padding:.4vw;
   border-radius: 5px;
   text-align: left;
@@ -34,14 +49,16 @@ body {
   flex-direction: row;
   justify-content: center;
   gap:3vw;
+  margin-top:10vh;
   margin-bottom: 2.5vh;
   font-size: 1.5rem;
 }
 
 #submit-button {
-  background-color: rgb(74, 74, 74);
+  border:none;
+  background-color: var(--primary-color);
   color:white;
-  width:20vw;
+  width:30vw;
   padding:.8vw 2.5vw .8vw 2.5vw;
   border-radius: 35px;
   text-align: center;
@@ -54,15 +71,20 @@ body {
 }
 #submit-button:hover {
   cursor:pointer;
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(35, 36, 121);
   color:rgb(232, 231, 231);
+}
+#started-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 
 #current-tasks {
-  background-color: rgb(146, 146, 146);
+  background-color: var(--secondary-color);
   color:rgb(255, 255, 255);
-  width:20vw;
+  width:60vw;
   padding:.8vw 2.5vw .8vw 2.5vw;
   border-radius: 35px;
   text-align: center;
@@ -76,7 +98,7 @@ body {
 
 
 .new-task-class {
-  background-color: rgb(229, 229, 229);
+  background-color: var(--third-color);
   padding:.8vw 1.5vw .8vw 2.5vw;
   border-radius: 35px;
   text-align: left;
@@ -88,7 +110,7 @@ body {
   font-size: 1.5rem;
 }
 .delete-button-class {
-  background-color: grey;
+  background-color: rgb(232, 47, 59);
   color:white;
   text-align: center;
   border-radius: 50px;
@@ -97,6 +119,22 @@ body {
 }
 .delete-button-class:hover {
     cursor: pointer;
-  color: grey;
-  background-color: rgb(202, 202, 202);
+  color: rgb(234, 234, 234);
+  background-color: rgb(196, 33, 44);
+}
+
+.day-counter-class {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left:55vw;
+}
+
+#day-counter{
+  position: relative;
+  top:-2px;
+  right:-10px;
+  font-size:1.5rem;
+  text-align: center;
+  border-radius: 5px;
 }
