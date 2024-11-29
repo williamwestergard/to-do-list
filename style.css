@@ -226,7 +226,6 @@ body {
   gap:3vw;
   margin-bottom:3vh;
   position: relative;
-  left:-10vw;
   font-size: 1.5rem;
 }
 
@@ -241,7 +240,6 @@ body {
   justify-content: space-between;
   gap:3vw;
   position: relative;
-  left:-11vw;
   margin-bottom: 2vh;
   font-size: 1.2rem;
 }
@@ -253,7 +251,7 @@ body {
   position: absolute;
   display: flex;
   justify-content: center;
-  left:67vw;
+  left:62vw;
   font-size: 1.2rem;
 }
 
