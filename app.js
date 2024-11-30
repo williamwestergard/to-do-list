@@ -59,7 +59,7 @@ function createTask(taskText, dayCounterValue = "") {
   let mouseIsDown = false;
   let idTimeout;
   
-  newTask.addEventListener('mousedown', function() {
+  newTask.addEventListener('touchstart', function() {
     mouseIsDown = true;
     idTimeout = setTimeout(function() {
       if(mouseIsDown) {
