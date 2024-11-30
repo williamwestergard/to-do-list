@@ -246,7 +246,8 @@ body {
   background-color: rgb(189, 205, 222);
 }
 .delete-button-class {
-  display:none;
+  width:0px;
+  height:0px;
 }
 
 .day-counter-class {
