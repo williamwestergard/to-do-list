@@ -139,7 +139,6 @@ body {
   border-radius: 5px;
 }
 
-
 /* Phone sizes */
 @media all and (min-width:100px) and (max-width:600px) {
   
@@ -242,6 +241,9 @@ body {
   position: relative;
   margin-bottom: 2vh;
   font-size: 1.2rem;
+}
+.new-task-class:active {
+  background-color: rgb(189, 205, 222);
 }
 .delete-button-class {
   display:none;

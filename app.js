@@ -53,6 +53,38 @@ function createTask(taskText, dayCounterValue = "") {
     updateDayCounterInLocalStorage(taskText, input.value);
   });
 
+  
+  
+
+  let mouseIsDown = false;
+  let idTimeout;
+  
+  newTask.addEventListener('mousedown', function() {
+    mouseIsDown = true;
+    idTimeout = setTimeout(function() {
+      if(mouseIsDown) {
+        if (confirm("Do you want to delete the task?") == true) {
+          newTask.remove();
+          deleteButton.remove();
+          removeFromLocalStorage(taskText);
+        } else {
+          return
+        }
+  
+      }
+    }, 700);
+  });
+  
+  window.addEventListener('mouseup', function() {
+    clearTimeout(idTimeout);
+    mouseIsDown = false;
+  });
+
+
+
+
+
+  
   // Delete button functionality
   deleteButton.addEventListener("click", function () {
     let text;
